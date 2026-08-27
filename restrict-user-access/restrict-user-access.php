@@ -8,7 +8,7 @@
  * Plugin Name:       Restrict User Access
  * Plugin URI:        https://dev.institute/wordpress-memberships/
  * Description:       Easily restrict content and contexts to provide exclusive access for specific Access Levels.
- * Version:           2.8
+ * Version:           2.8.1
  * Author:            DEV Institute
  * Author URI:        https://dev.institute
  * Requires at least: 5.8
@@ -37,6 +37,40 @@ $path = plugin_dir_path(__FILE__);
 require $path . 'src/Autoloader.php';
 if(!\RestrictUserAccess\Autoloader::init($path)) {
     return;
+}
+
+$legacy_files = [
+    "lib/wp-content-aware-engine/start.php",
+    "src/helpers.php",
+    "lib/wp-db-updater/wp-db-updater.php",
+    "helpers/collection.php",
+    "helpers/rua-member-query.php",
+    "interfaces/user_level.php",
+    "interfaces/user.php",
+    "interfaces/level.php",
+    "models/user.php",
+    "models/level.php",
+    "models/user_level.php",
+    "admin/admin.php",
+    "admin/admin_bar.php",
+    "admin/level-list-table.php",
+    "admin/level-overview.php",
+    "admin/level-edit.php",
+    "admin/settings.php",
+    "admin/screen_account.php",
+    "admin/screen_addons.php",
+    "admin/nav-menu.php",
+    "list-members.php",
+    "list-capabilities.php",
+    "app.php",
+    "level.php",
+    "freemius.php",
+    "api/deprecated.php",
+    "api/functions.php",
+    "automators/base.php"
+];
+foreach($legacy_files as $file) {
+    require_once $path . $file;
 }
 
 RUA_App::instance(); //legacy

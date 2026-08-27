@@ -4,48 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2d1383cc1781f8c67972fa29d70898ba
+class ComposerStaticInit21a15ce2c72e5908835d9063573d137c
 {
-    public static $files = array (
-        'c55b54ea7ccc726f37a0ed55e07fca3e' => __DIR__ . '/../..' . '/lib/wp-content-aware-engine/bootstrap.php',
-        '1c29018d25125d9aa31cc0468865c997' => __DIR__ . '/../..' . '/src/helpers.php',
-        'fb82d73a75e549cbbf9025256b8811a5' => __DIR__ . '/../..' . '/lib/wp-db-updater/wp-db-updater.php',
-        '25883a99a7fae5f6317f264a74f9688f' => __DIR__ . '/../..' . '/helpers/collection.php',
-        '088da5fe9be4d9d4ae2eb43c89bc554e' => __DIR__ . '/../..' . '/helpers/rua-member-query.php',
-        '8f214de4e4eacb5e99c77b6c159af910' => __DIR__ . '/../..' . '/interfaces/user_level.php',
-        'd3e1dda8435367e498aaefd59586bd34' => __DIR__ . '/../..' . '/interfaces/user.php',
-        'edd9b0f8fb5290a2e56966dcf8f29da4' => __DIR__ . '/../..' . '/interfaces/level.php',
-        '4fc320866320c0d73c51febcc685f786' => __DIR__ . '/../..' . '/models/user.php',
-        '7a0ced268fcc7b3eaade7849e5a50c32' => __DIR__ . '/../..' . '/models/level.php',
-        '9ccf84d26b8a14a547c33fc774e4d7f9' => __DIR__ . '/../..' . '/models/user_level.php',
-        '3cdadd16dfd1c61c1d15324146d5c3e6' => __DIR__ . '/../..' . '/admin/admin.php',
-        '9199fd1731449bcea0f82f84e5ad46be' => __DIR__ . '/../..' . '/admin/admin_bar.php',
-        '7857d4b63a808225234ceb8b4855eecf' => __DIR__ . '/../..' . '/admin/level-list-table.php',
-        'd9afa6bb0f189d353cda77dd66b441ae' => __DIR__ . '/../..' . '/admin/level-overview.php',
-        'c06e830a38ffffee9d453de74f08e910' => __DIR__ . '/../..' . '/admin/level-edit.php',
-        '39c2cef38935867eb3a64448915d2505' => __DIR__ . '/../..' . '/admin/settings.php',
-        '4a7a35b60f3a52ae67e9fb5a9b42490c' => __DIR__ . '/../..' . '/admin/screen_account.php',
-        '69c3dd162dfed607faa9ee8cba24146a' => __DIR__ . '/../..' . '/admin/screen_addons.php',
-        '0196bf9f94570e2df858d4600307d333' => __DIR__ . '/../..' . '/admin/nav-menu.php',
-        '1429101ae5a2ec0ec26250e4d7266c49' => __DIR__ . '/../..' . '/list-members.php',
-        '9e9716c4cb7abf95faf7943b7695a4a3' => __DIR__ . '/../..' . '/list-capabilities.php',
-        'b3ec96d664219bd5ebad4a40fbcbd005' => __DIR__ . '/../..' . '/app.php',
-        'd460eee6b8f67d1978d9591ea3d18a38' => __DIR__ . '/../..' . '/level.php',
-        '43ffebc15c90ee5abe969cc997835da2' => __DIR__ . '/../..' . '/freemius.php',
-        '6893e660703c5242d3bc2c8e4992262b' => __DIR__ . '/../..' . '/api/deprecated.php',
-        '485bdd7090a56729d456c74fb353926f' => __DIR__ . '/../..' . '/api/functions.php',
-        '5ef12e3d2d918c0a92a70f59b98e4605' => __DIR__ . '/../..' . '/automators/base.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'R' => 
+        'R' =>
         array (
             'RestrictUserAccess\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'RestrictUserAccess\\' => 
+        'RestrictUserAccess\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -98,9 +67,9 @@ class ComposerStaticInit2d1383cc1781f8c67972fa29d70898ba
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2d1383cc1781f8c67972fa29d70898ba::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2d1383cc1781f8c67972fa29d70898ba::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2d1383cc1781f8c67972fa29d70898ba::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit21a15ce2c72e5908835d9063573d137c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit21a15ce2c72e5908835d9063573d137c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit21a15ce2c72e5908835d9063573d137c::$classMap;
 
         }, null, ClassLoader::class);
     }
